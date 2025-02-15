@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(./images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100cw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+nav select {
+    font-family: 'Martel Sans';
+    padding: 2px 6px;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.hero {
+    font-family: 'Martel Sans';
+    height: calc(100% - 62px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0px 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 56px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgba(58, 54, 54, 0.634);
+}
+
+.btn {
+    font-family: 'Martel Sans';
+    padding: 3px 8px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.085);
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.btn-red {
+    background-color: red;
+    font-size: 100px;
+    padding: 12px 20px;
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.main input {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    padding: 20px 97px 20px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+.first {
+    height: 50vh;
+    position: relative;
+}
+
+.first h2 {
+    max-width: 80vw;
+    margin: auto;
+    font-family: 'Martel Sans';
+    color: white;
+    padding: 15px 0px 0px 20px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain {
+    height: 219px;
+    width: 164px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: 164px 219px;
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+}
+
+.contain:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.last {
+    height: 80vh;
+    position: relative;
+
+}
+
+.last h2 {
+    max-width: 80vw;
+    margin: auto;
+    font-family: 'Martel Sans';
+    color: white;
+    padding: 15px 0px 0px 20px;
+}
+
+.ques {
+    max-width: 80vw;
+    height: 24vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    row-gap: 5px;
+    padding: 15px 0px 0px 20px;
+}
+
+.ques div {
+    font-family: 'Martel Sans';
+    font-weight: 400;
+    font-size: 24px;
+    background-color: rgba(130, 124, 124, 0.481);
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 20px 36px 20px 15px;
+}
+
+.ques span{
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
