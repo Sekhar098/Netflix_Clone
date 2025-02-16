@@ -13,7 +13,7 @@ body {
 .main {
     background-image: url(./images/bg.jpg);
     background-position: center center;
-    background-size: max(1200px, 100cw);
+    background-size: max(1px, 100cw);
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
@@ -82,7 +82,6 @@ nav select {
     font-weight: 700;
     font-size: 24px;
     text-align: center;
-
 }
 
 .hero> :nth-child(3) {
@@ -144,6 +143,16 @@ nav select {
     height: 50vh;
     position: relative;
 }
+@media only screen and (max-width:1082px){
+    .first{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width:532px){
+    .first{
+        height: 75vh;
+    }
+}
 
 .first h2 {
     max-width: 80vw;
@@ -156,6 +165,7 @@ nav select {
 .tab {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     align-items: center;
     justify-content: center;
@@ -174,6 +184,7 @@ nav select {
 
 .contain:hover {
     transform: scale(1.2, 1.2);
+    border-color: red;
 }
 
 .last {
@@ -191,30 +202,34 @@ nav select {
 }
 
 .ques {
-    max-width: 80vw;
-    height: 24vh;
+    max-width: 78vw;
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     margin: auto;
-    row-gap: 5px;
-    padding: 15px 0px 0px 20px;
 }
 
-.ques div {
+.ques span {
     font-family: 'Martel Sans';
     font-weight: 400;
     font-size: 24px;
-    background-color: rgba(130, 124, 124, 0.481);
+    display: flex;
+    justify-content: space-between;
+    background-color:#2d2d2d;
     color: white;
     border: 1px solid white;
     border-radius: 3px;
-    padding: 20px 36px 20px 15px;
+    padding: 10px 25px;
+    margin-bottom: 3px;
 }
 
-.ques span{
-    position: relative;
-    color: white;
-    text-align: center;
-    padding: 10px 0px 20px 0px;
+.ques span:hover{
+    color: rgba(255, 255, 255, 0.379);
+    background-color: #232323;
 }
+
+.ques h5{
+    color: white;
+}
+
