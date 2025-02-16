@@ -127,6 +127,18 @@ nav select {
     gap: 16px;
 }
 
+@media only screen and (max-width:515px) {
+    .hero{
+        height: 150vh;
+        display: flex;
+        flex-wrap: wrap;
+        background-size: contain;
+    }
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .main input {
     background-color: rgba(0, 0, 0, 0.3);
@@ -143,14 +155,22 @@ nav select {
     height: 50vh;
     position: relative;
 }
-@media only screen and (max-width:1082px){
-    .first{
-        height: 60vh;
+
+@media only screen and (max-width:1082px) {
+    .first {
+        height: 80vh;
     }
 }
-@media only screen and (max-width:532px){
-    .first{
-        height: 75vh;
+
+@media only screen and (max-width:532px) {
+    .first {
+        height: 110vh;
+    }
+}
+
+@media only screen and (max-width:348px) {
+    .first {
+        height: 220vh;
     }
 }
 
@@ -216,7 +236,7 @@ nav select {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
-    background-color:#2d2d2d;
+    background-color: #2d2d2d;
     color: white;
     border: 1px solid white;
     border-radius: 3px;
@@ -224,16 +244,15 @@ nav select {
     margin-bottom: 3px;
 }
 
-.ques span:hover{
+.ques span:hover {
     color: rgba(255, 255, 255, 0.379);
     background-color: #232323;
 }
 
-.last h5{
+.last h5 {
     font-family: 'Martel Sans';
     text-align: center;
     color: white;
     padding-top: 20px;
 
 }
-
