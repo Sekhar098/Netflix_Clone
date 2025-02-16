@@ -188,7 +188,7 @@ nav select {
 }
 
 .last {
-    height: 80vh;
+    height: 70vh;
     position: relative;
 
 }
@@ -229,7 +229,11 @@ nav select {
     background-color: #232323;
 }
 
-.ques h5{
+.last h5{
+    font-family: 'Martel Sans';
+    text-align: center;
     color: white;
+    padding-top: 20px;
+
 }
 
